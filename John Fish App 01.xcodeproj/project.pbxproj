@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB0B3E012263C9D3009C8BCF /* scheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0B3E002263C9D3009C8BCF /* scheduleTableViewCell.swift */; };
+		AB0B3E032263CD75009C8BCF /* goalsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0B3E022263CD75009C8BCF /* goalsTableViewCell.swift */; };
+		AB0B3E052263CD9D009C8BCF /* toDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0B3E042263CD9D009C8BCF /* toDoTableViewCell.swift */; };
+		AB364A19228333E70034C54C /* DataTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB364A18228333E70034C54C /* DataTypes.swift */; };
+		AB4792CB22853B60001F5699 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4792CA22853B60001F5699 /* PersistenceService.swift */; };
 		ABA7BD182262C9FB005F10D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BD172262C9FB005F10D1 /* AppDelegate.swift */; };
 		ABA7BD1A2262C9FB005F10D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BD192262C9FB005F10D1 /* ViewController.swift */; };
 		ABA7BD1D2262C9FB005F10D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABA7BD1B2262C9FB005F10D1 /* Main.storyboard */; };
@@ -15,6 +20,7 @@
 		ABA7BD252262C9FB005F10D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABA7BD232262C9FB005F10D1 /* LaunchScreen.storyboard */; };
 		ABA7BD302262C9FB005F10D1 /* John_Fish_App_01Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BD2F2262C9FB005F10D1 /* John_Fish_App_01Tests.swift */; };
 		ABA7BD3B2262C9FB005F10D1 /* John_Fish_App_01UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BD3A2262C9FB005F10D1 /* John_Fish_App_01UITests.swift */; };
+		ABA7BD4A2262CA7D005F10D1 /* motivationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BD492262CA7D005F10D1 /* motivationTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB0B3E002263C9D3009C8BCF /* scheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleTableViewCell.swift; sourceTree = "<group>"; };
+		AB0B3E022263CD75009C8BCF /* goalsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = goalsTableViewCell.swift; sourceTree = "<group>"; };
+		AB0B3E042263CD9D009C8BCF /* toDoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toDoTableViewCell.swift; sourceTree = "<group>"; };
+		AB364A18228333E70034C54C /* DataTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTypes.swift; sourceTree = "<group>"; };
+		AB4792CA22853B60001F5699 /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
 		ABA7BD142262C9FB005F10D1 /* John Fish App 01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "John Fish App 01.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABA7BD172262C9FB005F10D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABA7BD192262C9FB005F10D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +60,7 @@
 		ABA7BD362262C9FB005F10D1 /* John Fish App 01UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "John Fish App 01UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABA7BD3A2262C9FB005F10D1 /* John_Fish_App_01UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = John_Fish_App_01UITests.swift; sourceTree = "<group>"; };
 		ABA7BD3C2262C9FB005F10D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABA7BD492262CA7D005F10D1 /* motivationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = motivationTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +111,11 @@
 		ABA7BD162262C9FB005F10D1 /* John Fish App 01 */ = {
 			isa = PBXGroup;
 			children = (
+				ABA7BD482262CA4E005F10D1 /* TableViewCells */,
 				ABA7BD172262C9FB005F10D1 /* AppDelegate.swift */,
+				AB4792CA22853B60001F5699 /* PersistenceService.swift */,
 				ABA7BD192262C9FB005F10D1 /* ViewController.swift */,
+				AB364A18228333E70034C54C /* DataTypes.swift */,
 				ABA7BD1B2262C9FB005F10D1 /* Main.storyboard */,
 				ABA7BD212262C9FB005F10D1 /* Assets.xcassets */,
 				ABA7BD232262C9FB005F10D1 /* LaunchScreen.storyboard */,
@@ -126,6 +141,17 @@
 				ABA7BD3C2262C9FB005F10D1 /* Info.plist */,
 			);
 			path = "John Fish App 01UITests";
+			sourceTree = "<group>";
+		};
+		ABA7BD482262CA4E005F10D1 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				AB0B3E002263C9D3009C8BCF /* scheduleTableViewCell.swift */,
+				AB0B3E022263CD75009C8BCF /* goalsTableViewCell.swift */,
+				AB0B3E042263CD9D009C8BCF /* toDoTableViewCell.swift */,
+				ABA7BD492262CA7D005F10D1 /* motivationTableViewCell.swift */,
+			);
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +286,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABA7BD202262C9FB005F10D1 /* John_Fish_App_01.xcdatamodeld in Sources */,
+				AB364A19228333E70034C54C /* DataTypes.swift in Sources */,
+				ABA7BD4A2262CA7D005F10D1 /* motivationTableViewCell.swift in Sources */,
+				AB0B3E032263CD75009C8BCF /* goalsTableViewCell.swift in Sources */,
+				AB0B3E052263CD9D009C8BCF /* toDoTableViewCell.swift in Sources */,
+				AB0B3E012263C9D3009C8BCF /* scheduleTableViewCell.swift in Sources */,
 				ABA7BD1A2262C9FB005F10D1 /* ViewController.swift in Sources */,
+				AB4792CB22853B60001F5699 /* PersistenceService.swift in Sources */,
 				ABA7BD182262C9FB005F10D1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,11 +471,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J3RE9RZJ4Z;
 				INFOPLIST_FILE = "John Fish App 01/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Mallah.production.John-Fish-App-01";
+				PRODUCT_BUNDLE_IDENTIFIER = Mallah.production.TestVersion01;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -457,11 +490,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J3RE9RZJ4Z;
 				INFOPLIST_FILE = "John Fish App 01/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Mallah.production.John-Fish-App-01";
+				PRODUCT_BUNDLE_IDENTIFIER = Mallah.production.TestVersion01;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
