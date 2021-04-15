@@ -12,6 +12,8 @@
 		AB0B3E052263CD9D009C8BCF /* toDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0B3E042263CD9D009C8BCF /* toDoTableViewCell.swift */; };
 		AB364A19228333E70034C54C /* DataTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB364A18228333E70034C54C /* DataTypes.swift */; };
 		AB4792CB22853B60001F5699 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4792CA22853B60001F5699 /* PersistenceService.swift */; };
+		AB681F4A2289C1080002D553 /* ScheduleArray+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB681F482289C1080002D553 /* ScheduleArray+CoreDataClass.swift */; };
+		AB681F4B2289C1080002D553 /* ScheduleArray+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB681F492289C1080002D553 /* ScheduleArray+CoreDataProperties.swift */; };
 		ABA7BD182262C9FB005F10D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BD172262C9FB005F10D1 /* AppDelegate.swift */; };
 		ABA7BD1A2262C9FB005F10D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BD192262C9FB005F10D1 /* ViewController.swift */; };
 		ABA7BD1D2262C9FB005F10D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABA7BD1B2262C9FB005F10D1 /* Main.storyboard */; };
@@ -46,7 +48,9 @@
 		AB0B3E042263CD9D009C8BCF /* toDoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toDoTableViewCell.swift; sourceTree = "<group>"; };
 		AB364A18228333E70034C54C /* DataTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTypes.swift; sourceTree = "<group>"; };
 		AB4792CA22853B60001F5699 /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
-		ABA7BD142262C9FB005F10D1 /* John Fish App 01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "John Fish App 01.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB681F482289C1080002D553 /* ScheduleArray+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ScheduleArray+CoreDataClass.swift"; path = "CoreData/ScheduleArray+CoreDataClass.swift"; sourceTree = "<group>"; };
+		AB681F492289C1080002D553 /* ScheduleArray+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ScheduleArray+CoreDataProperties.swift"; path = "CoreData/ScheduleArray+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		ABA7BD142262C9FB005F10D1 /* John Fish App 03.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "John Fish App 03.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABA7BD172262C9FB005F10D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABA7BD192262C9FB005F10D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ABA7BD1C2262C9FB005F10D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,10 +58,10 @@
 		ABA7BD212262C9FB005F10D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABA7BD242262C9FB005F10D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABA7BD262262C9FB005F10D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ABA7BD2B2262C9FB005F10D1 /* John Fish App 01Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "John Fish App 01Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABA7BD2B2262C9FB005F10D1 /* John Fish App 03Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "John Fish App 03Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABA7BD2F2262C9FB005F10D1 /* John_Fish_App_01Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = John_Fish_App_01Tests.swift; sourceTree = "<group>"; };
 		ABA7BD312262C9FB005F10D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ABA7BD362262C9FB005F10D1 /* John Fish App 01UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "John Fish App 01UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABA7BD362262C9FB005F10D1 /* John Fish App 03UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "John Fish App 03UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABA7BD3A2262C9FB005F10D1 /* John_Fish_App_01UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = John_Fish_App_01UITests.swift; sourceTree = "<group>"; };
 		ABA7BD3C2262C9FB005F10D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABA7BD492262CA7D005F10D1 /* motivationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = motivationTableViewCell.swift; sourceTree = "<group>"; };
@@ -91,9 +95,11 @@
 		ABA7BD0B2262C9FA005F10D1 = {
 			isa = PBXGroup;
 			children = (
-				ABA7BD162262C9FB005F10D1 /* John Fish App 01 */,
-				ABA7BD2E2262C9FB005F10D1 /* John Fish App 01Tests */,
-				ABA7BD392262C9FB005F10D1 /* John Fish App 01UITests */,
+				AB681F482289C1080002D553 /* ScheduleArray+CoreDataClass.swift */,
+				AB681F492289C1080002D553 /* ScheduleArray+CoreDataProperties.swift */,
+				ABA7BD162262C9FB005F10D1 /* John Fish App 03 */,
+				ABA7BD2E2262C9FB005F10D1 /* John Fish App 03Tests */,
+				ABA7BD392262C9FB005F10D1 /* John Fish App 03UITests */,
 				ABA7BD152262C9FB005F10D1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,14 +107,14 @@
 		ABA7BD152262C9FB005F10D1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ABA7BD142262C9FB005F10D1 /* John Fish App 01.app */,
-				ABA7BD2B2262C9FB005F10D1 /* John Fish App 01Tests.xctest */,
-				ABA7BD362262C9FB005F10D1 /* John Fish App 01UITests.xctest */,
+				ABA7BD142262C9FB005F10D1 /* John Fish App 03.app */,
+				ABA7BD2B2262C9FB005F10D1 /* John Fish App 03Tests.xctest */,
+				ABA7BD362262C9FB005F10D1 /* John Fish App 03UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ABA7BD162262C9FB005F10D1 /* John Fish App 01 */ = {
+		ABA7BD162262C9FB005F10D1 /* John Fish App 03 */ = {
 			isa = PBXGroup;
 			children = (
 				ABA7BD482262CA4E005F10D1 /* TableViewCells */,
@@ -122,25 +128,25 @@
 				ABA7BD262262C9FB005F10D1 /* Info.plist */,
 				ABA7BD1E2262C9FB005F10D1 /* John_Fish_App_01.xcdatamodeld */,
 			);
-			path = "John Fish App 01";
+			path = "John Fish App 03";
 			sourceTree = "<group>";
 		};
-		ABA7BD2E2262C9FB005F10D1 /* John Fish App 01Tests */ = {
+		ABA7BD2E2262C9FB005F10D1 /* John Fish App 03Tests */ = {
 			isa = PBXGroup;
 			children = (
 				ABA7BD2F2262C9FB005F10D1 /* John_Fish_App_01Tests.swift */,
 				ABA7BD312262C9FB005F10D1 /* Info.plist */,
 			);
-			path = "John Fish App 01Tests";
+			path = "John Fish App 03Tests";
 			sourceTree = "<group>";
 		};
-		ABA7BD392262C9FB005F10D1 /* John Fish App 01UITests */ = {
+		ABA7BD392262C9FB005F10D1 /* John Fish App 03UITests */ = {
 			isa = PBXGroup;
 			children = (
 				ABA7BD3A2262C9FB005F10D1 /* John_Fish_App_01UITests.swift */,
 				ABA7BD3C2262C9FB005F10D1 /* Info.plist */,
 			);
-			path = "John Fish App 01UITests";
+			path = "John Fish App 03UITests";
 			sourceTree = "<group>";
 		};
 		ABA7BD482262CA4E005F10D1 /* TableViewCells */ = {
@@ -157,9 +163,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ABA7BD132262C9FB005F10D1 /* John Fish App 01 */ = {
+		ABA7BD132262C9FB005F10D1 /* John Fish App 03 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ABA7BD3F2262C9FB005F10D1 /* Build configuration list for PBXNativeTarget "John Fish App 01" */;
+			buildConfigurationList = ABA7BD3F2262C9FB005F10D1 /* Build configuration list for PBXNativeTarget "John Fish App 03" */;
 			buildPhases = (
 				ABA7BD102262C9FB005F10D1 /* Sources */,
 				ABA7BD112262C9FB005F10D1 /* Frameworks */,
@@ -169,14 +175,14 @@
 			);
 			dependencies = (
 			);
-			name = "John Fish App 01";
+			name = "John Fish App 03";
 			productName = "John Fish App 01";
-			productReference = ABA7BD142262C9FB005F10D1 /* John Fish App 01.app */;
+			productReference = ABA7BD142262C9FB005F10D1 /* John Fish App 03.app */;
 			productType = "com.apple.product-type.application";
 		};
-		ABA7BD2A2262C9FB005F10D1 /* John Fish App 01Tests */ = {
+		ABA7BD2A2262C9FB005F10D1 /* John Fish App 03Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ABA7BD422262C9FB005F10D1 /* Build configuration list for PBXNativeTarget "John Fish App 01Tests" */;
+			buildConfigurationList = ABA7BD422262C9FB005F10D1 /* Build configuration list for PBXNativeTarget "John Fish App 03Tests" */;
 			buildPhases = (
 				ABA7BD272262C9FB005F10D1 /* Sources */,
 				ABA7BD282262C9FB005F10D1 /* Frameworks */,
@@ -187,14 +193,14 @@
 			dependencies = (
 				ABA7BD2D2262C9FB005F10D1 /* PBXTargetDependency */,
 			);
-			name = "John Fish App 01Tests";
+			name = "John Fish App 03Tests";
 			productName = "John Fish App 01Tests";
-			productReference = ABA7BD2B2262C9FB005F10D1 /* John Fish App 01Tests.xctest */;
+			productReference = ABA7BD2B2262C9FB005F10D1 /* John Fish App 03Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		ABA7BD352262C9FB005F10D1 /* John Fish App 01UITests */ = {
+		ABA7BD352262C9FB005F10D1 /* John Fish App 03UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ABA7BD452262C9FB005F10D1 /* Build configuration list for PBXNativeTarget "John Fish App 01UITests" */;
+			buildConfigurationList = ABA7BD452262C9FB005F10D1 /* Build configuration list for PBXNativeTarget "John Fish App 03UITests" */;
 			buildPhases = (
 				ABA7BD322262C9FB005F10D1 /* Sources */,
 				ABA7BD332262C9FB005F10D1 /* Frameworks */,
@@ -205,9 +211,9 @@
 			dependencies = (
 				ABA7BD382262C9FB005F10D1 /* PBXTargetDependency */,
 			);
-			name = "John Fish App 01UITests";
+			name = "John Fish App 03UITests";
 			productName = "John Fish App 01UITests";
-			productReference = ABA7BD362262C9FB005F10D1 /* John Fish App 01UITests.xctest */;
+			productReference = ABA7BD362262C9FB005F10D1 /* John Fish App 03UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -233,7 +239,7 @@
 					};
 				};
 			};
-			buildConfigurationList = ABA7BD0F2262C9FA005F10D1 /* Build configuration list for PBXProject "John Fish App 01" */;
+			buildConfigurationList = ABA7BD0F2262C9FA005F10D1 /* Build configuration list for PBXProject "John Fish App 03" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -246,9 +252,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ABA7BD132262C9FB005F10D1 /* John Fish App 01 */,
-				ABA7BD2A2262C9FB005F10D1 /* John Fish App 01Tests */,
-				ABA7BD352262C9FB005F10D1 /* John Fish App 01UITests */,
+				ABA7BD132262C9FB005F10D1 /* John Fish App 03 */,
+				ABA7BD2A2262C9FB005F10D1 /* John Fish App 03Tests */,
+				ABA7BD352262C9FB005F10D1 /* John Fish App 03UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -285,6 +291,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB681F4A2289C1080002D553 /* ScheduleArray+CoreDataClass.swift in Sources */,
+				AB681F4B2289C1080002D553 /* ScheduleArray+CoreDataProperties.swift in Sources */,
 				ABA7BD202262C9FB005F10D1 /* John_Fish_App_01.xcdatamodeld in Sources */,
 				AB364A19228333E70034C54C /* DataTypes.swift in Sources */,
 				ABA7BD4A2262CA7D005F10D1 /* motivationTableViewCell.swift in Sources */,
@@ -318,12 +326,12 @@
 /* Begin PBXTargetDependency section */
 		ABA7BD2D2262C9FB005F10D1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = ABA7BD132262C9FB005F10D1 /* John Fish App 01 */;
+			target = ABA7BD132262C9FB005F10D1 /* John Fish App 03 */;
 			targetProxy = ABA7BD2C2262C9FB005F10D1 /* PBXContainerItemProxy */;
 		};
 		ABA7BD382262C9FB005F10D1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = ABA7BD132262C9FB005F10D1 /* John Fish App 01 */;
+			target = ABA7BD132262C9FB005F10D1 /* John Fish App 03 */;
 			targetProxy = ABA7BD372262C9FB005F10D1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -470,7 +478,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J3RE9RZJ4Z;
-				INFOPLIST_FILE = "John Fish App 01/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/John Fish App 03/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -489,7 +497,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J3RE9RZJ4Z;
-				INFOPLIST_FILE = "John Fish App 01/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/John Fish App 03/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -519,7 +527,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/John Fish App 01.app/John Fish App 01";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/John Fish App 03.app/John Fish App 03";
 			};
 			name = Debug;
 		};
@@ -540,7 +548,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/John Fish App 01.app/John Fish App 01";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/John Fish App 03.app/John Fish App 03";
 			};
 			name = Release;
 		};
@@ -587,7 +595,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ABA7BD0F2262C9FA005F10D1 /* Build configuration list for PBXProject "John Fish App 01" */ = {
+		ABA7BD0F2262C9FA005F10D1 /* Build configuration list for PBXProject "John Fish App 03" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ABA7BD3D2262C9FB005F10D1 /* Debug */,
@@ -596,7 +604,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ABA7BD3F2262C9FB005F10D1 /* Build configuration list for PBXNativeTarget "John Fish App 01" */ = {
+		ABA7BD3F2262C9FB005F10D1 /* Build configuration list for PBXNativeTarget "John Fish App 03" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ABA7BD402262C9FB005F10D1 /* Debug */,
@@ -605,7 +613,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ABA7BD422262C9FB005F10D1 /* Build configuration list for PBXNativeTarget "John Fish App 01Tests" */ = {
+		ABA7BD422262C9FB005F10D1 /* Build configuration list for PBXNativeTarget "John Fish App 03Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ABA7BD432262C9FB005F10D1 /* Debug */,
@@ -614,7 +622,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ABA7BD452262C9FB005F10D1 /* Build configuration list for PBXNativeTarget "John Fish App 01UITests" */ = {
+		ABA7BD452262C9FB005F10D1 /* Build configuration list for PBXNativeTarget "John Fish App 03UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ABA7BD462262C9FB005F10D1 /* Debug */,

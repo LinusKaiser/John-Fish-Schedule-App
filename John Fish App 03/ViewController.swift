@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import CoreData
+
 
 var scheduleCellEntries: [ScheduleCell] = [ ScheduleCell(id: 1, textButtonState: false, timeButtonState: false, text: "...", time01: "05:30", time02: "06:30"), ScheduleCell(id: 1, textButtonState: false, timeButtonState: false, text: "...", time01: "06:30", time02: "07:30"), ScheduleCell(id: 1, textButtonState: false, timeButtonState: false, text: "...", time01: "07:30", time02: "08:30"), ScheduleCell(id: 1, textButtonState: false, timeButtonState: false, text: "...", time01: "08:30", time02: "09:30"), ScheduleCell(id: 1, textButtonState: false, timeButtonState: false, text: "...", time01: "09:30", time02: "10:30"), ScheduleCell(id: 1, textButtonState: false, timeButtonState: false, text: "...", time01: "10:30", time02: "11:30"), ScheduleCell(id: 1, textButtonState: false, timeButtonState: false, text: "...", time01: "11:30", time02: "12:30"), ScheduleCell(id: 1, textButtonState: false, timeButtonState: false, text: "...", time01: "12:30", time02: "13:30"), ScheduleCell(id: 1, textButtonState: false, timeButtonState: false, text: "...", time01: "13:30", time02: "14:30"), ScheduleCell(id: 1, textButtonState: false, timeButtonState: false, text: "...", time01: "14:30", time02: "15:30"), ScheduleCell(id: 1, textButtonState: false, timeButtonState: false, text: "...", time01: "15:30", time02: "16:30"), ScheduleCell(id: 1, textButtonState: false, timeButtonState: false, text: "...", time01: "16:30", time02: "17:30"), ScheduleCell(id: 1, textButtonState: false, timeButtonState: false, text: "...", time01: "17:30", time02: "18:30"), ScheduleCell(id: 1, textButtonState: false, timeButtonState: false, text: "...", time01: "18:30", time02: "19:30"), ScheduleCell(id: 1, textButtonState: false, timeButtonState: false, text: "...", time01: "19:30", time02: "20:30"), ScheduleCell(id: 1, textButtonState: false, timeButtonState: false, text: "...", time01: "20:30", time02: "21:30"), ScheduleCell(id: 1, textButtonState: false, timeButtonState: false, text: "...", time01: "21:30", time02: "22:30"), ScheduleCell(id: 1, textButtonState: false, timeButtonState: false, text: "...", time01: "22:30", time02: "23:30")]
 
@@ -18,8 +20,23 @@ var motivationCellEntries: [MotivationCell]!
 
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
+   
+    //Inits
+
+    init(persistenceService: PersistenceService){
+        self.persistenceService = persistenceService
+        super.init(nibName: nil, bundle: nil)
+        
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:)has not been implemented")
+    }
+   
     
     //Variables & Constants ...
+    
+    let persistenceService: PersistenceService
     
     var scheduleScore: Int = 0
     var scheduleTotalScore: Int = 0
@@ -27,7 +44,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     var goalsScore: Int = 0
     var goalsTotalScore: Int = 0
     
-    var toDosScore: Int = 0
+    var toDosScore: Int = 0 
     var toDosTotalScore: Int = 0
     
     var totalScore: Int = 0
@@ -94,7 +111,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         textDisplayingLabel.isHidden = true
         
         
-        
+        persistenceService.saveContext()
         
         //Loads the initial scores on the View
         presentScoreOnScreen(from: scheduleScoreLabel)
@@ -496,6 +513,21 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         textDisplayingView.isHidden = true
         textDisplayingInnerView.isHidden = true
         textDisplayingLabel.isHidden = true
+    }
+    
+    
+    @IBAction func scheduleTextCoreData(_ sender: UITextField) {
+        func safingArrays() {
+            let scheduleArray = ScheduleArray(context: persistenceService.context)
+            
+            if let indexPath = self.scheduleTableView.indexPathForView(sender){
+                scheduleArray.id = Int16(scheduleCellEntries[indexPath.row].id)
+                scheduleArray.textButtonState = scheduleCellEntries[indexPath.row].textButtonState
+                
+                //persistenceService.saveContext()
+            }
+        }
+    
     }
     
     
